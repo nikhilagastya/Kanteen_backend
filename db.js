@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const url =
   "mongodb+srv://KMITKanteen:qwerty123@cluster0.hqm6ixw.mongodb.net/kanteen?retryWrites=true&w=majority";
-
+mongoose.set('strictQuery', false);
 const mongo = async () => {
   await mongoose.connect(url, async (err, req) => {
     if (err) {
