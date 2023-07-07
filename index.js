@@ -10,12 +10,6 @@ app.use((req, res, next) => {
   );
   next();
 });
-const cors = require("cors");
-app.use(
-  cors({
-    origin: "https://kanteen.netlify.app/",
-  })
-);
 app.use(express.json());
 
 mongo();
