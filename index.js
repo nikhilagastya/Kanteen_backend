@@ -16,6 +16,8 @@ mongo();
 app.get("/", (req, res) => {
   res.send("hello");
 });
+
+
 app.use(require("./Routes/CreateUser"));
 app.use(require("./Routes/food"));
 app.use(require("./Routes/DisplayData"));
